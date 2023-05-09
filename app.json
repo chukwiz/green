@@ -21,7 +21,11 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.green.delivery"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -33,7 +37,19 @@
           "cameraPermission": "Allow Green to access your camera",
           "photosPermission": "Allow Green access to your photos"
         }
+      ],
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoibGF6eWRldjMzIiwiYSI6ImNsaDlwMjI1YTA5cnMzbGxwOWR0NTRmZGMifQ.IFaNaoaHmToqPxuWscJg1A"
+        }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "00e5ba92-f02a-4215-9005-8188ef9a6a92"
+      }
+    }
   }
 }

@@ -11,6 +11,7 @@ import { COLORS } from "../constants";
 import { useBottomTabBarHeight } from "@react-navigation/bottom-tabs";
 import { CustomText, Icon } from "../components";
 import { MaterialCommunityIcons } from "@expo/vector-icons"
+import Map from "../components/map/Map";
 
 const TrackingScreen = () => {
   const [step, setStep] = useState(2);
@@ -28,49 +29,8 @@ const TrackingScreen = () => {
     >
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ padding: 20 }}>
-          {/* <View style={{ position: "relative" }}>
-            <View
-              style={{ width: "100%", height: 2, backgroundColor: COLORS.grey[300] }}
-            />
-            <View
-              style={{
-                width: "100%",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-between",
-                position: "absolute",
-                top: 0,
-                left: 0
-              }}
-            >
-              <View
-                style={{
-                  minWidth: 10,
-                  minHeight: 10,
-                  borderRadius: 5,
-                  backgroundColor: COLORS.grey[300],
-                }}
-              />
-              <View
-                style={{
-                  minWidth: 10,
-                  minHeight: 10,
-                  borderRadius: 5,
-                  backgroundColor: COLORS.grey[300],
-                }}
-              />
-              <View
-                style={{
-                  minWidth: 10,
-                  minHeight: 10,
-                  borderRadius: 5,
-                  backgroundColor: COLORS.grey[300],
-                }}
-              />
-            </View>
-          </View> */}
-
-          <TouchableOpacity
+          <Map />
+          {/* <TouchableOpacity
             style={{
               backgroundColor: "#ffffff",
               marginVertical: 10,
@@ -251,7 +211,7 @@ const TrackingScreen = () => {
             </View>
 
             
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       </ScrollView>
     </View>
